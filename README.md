@@ -38,3 +38,42 @@ Whether you're onboarding onto a massive legacy codebase, conducting security au
 ---
 
 ## 🏗️ Architecture
+CodeMap.ai
+├── 📁 .lovable/        # Project metadata & environment configuration
+├── 📁 public/          # Static assets & favicon icons
+├── 📁 src/
+│   ├── 📁 assets/      # Stylesheets, icons, and media files
+│   ├── 📁 components/  # Reusable UI primitives (Shadcn UI / Radix)
+│   ├── 📁 hooks/       # Custom React hooks
+│   ├── 📁 lib/         # Core AI parsing logic & utility functions
+│   └── 📁 pages/       # Application views & routing logic
+├── 📄 AGENTS.md        # AI agent instructions & workspace rules
+├── 📄 package.json     # Node dependencies & project scripts
+└── 📄 vite.config.ts   # Vite bundler configuration
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+Ensure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/) (v18.0 or higher)
+- [Bun](https://bun.sh/) or `npm` / `pnpm`
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone [https://github.com/Mayank-iitj/CodeMap.ai.git](https://github.com/Mayank-iitj/CodeMap.ai.git)
+   cd CodeMap.ai
+
+   Install dependenciesUsing Bun (recommended):Bashbun install
+or using npm:Bashnpm install
+Configure Environment VariablesCreate a .env.local file in the root directory and set up your required keys:Code snippetVITE_API_URL=http://localhost:3000
+VITE_AI_MODEL_KEY=your_api_key_here
+Start the development serverBashbun run dev
+# or
+npm run dev
+Navigate to http://localhost:5173 in your browser.🛠️ Tech StackFramework: React 18 with TypeScriptBuild Tool: ViteStyling: Tailwind CSSPackage Manager: BunLinter & Formatter: ESLint & Prettier📜 Available ScriptsCommandDescriptionbun run devStarts the local development server with HMR.bun run buildBuilds the optimized production bundle.bun run previewPreviews the local production build.bun run lintRuns ESLint to check for code quality issues.🤝 ContributingContributions are welcome! Please follow these steps:Fork the repository.Create your feature branch (git checkout -b feature/amazing-feature).Commit your changes (git commit -m 'Add amazing feature').Push to the branch (git push origin feature/amazing-feature).Open a Pull Request.📝 LicenseDistributed under the MIT License. See LICENSE for more information.Crafted with ❤️ by Mayank Sharma
